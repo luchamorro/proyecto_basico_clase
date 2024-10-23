@@ -156,6 +156,12 @@ header>div { border: 0.2rem solid red;}
                 
                 }
 
+             footer {
+                background-image: url("/img_corporativo/pattern.png");
+                background-size: 11%;
+                background-repeat:repeat-x;
+             }   
+
      
               /*  Codigo pagina en tablet      */
 
