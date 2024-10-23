@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto básico</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="ponerBorde">
+        <ul> <!-- ul>li*5.menu>a{enlace$} -->
+            <li class="menu"><a href="index.html">Home</a></li>
+            <li class="menu"><a href="">enlace2</a></li>
+            <li class="menu"><a href="">enlace3</a></li>
+            <li class="menu"><a href="">enlace4</a></li>
+            <li class="menu"><a href="">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+    <header> <!-- h1+h2+p--> <!--div>ul>li*4-->
+
+       <div class="logo">
+
+       </div>
+
+       <div class="titulo">
+
+            <h1>Contacto</h1>
+            <h2>Visita klsfad dfklsfjslk dsaf</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Provident voluptatem ab tempore necessitatibus est dolore, praesentium saepe eos eius quo?</p>
+
+       </div> 
+       
+     
+      
+    </header>
+
+    <main id="principal">  <!-- section para sucesión de contenidos organizada en una secuencia. Article: contenido independiente del resto de la página. permite que el article pueda tener su propio header y su propio footer. Etiquetas un poco ambiguas. no podemos definir de forma muy clara. -->
+        
+       <section>
+            <article class="mapa">
+
+            </article> <!--mapa de google maps-->
+           
+            <article class="form">
+
+                <form action="recogida.php" method="get"> <!-- modos de envio de info dialog, get, post -->
+
+                <label for="primero"> Nombre
+                    <input type="text" id="primero" name="nombre" placeholder="Tu nombre"/>
+                </label> <!--vinculamos for y id poniendo lo mismo "primero"-->
+
+                <label for="segundo"> Apellido
+                    <input type="text" id="segundo" name="apellido" placeholder="Tu apellido"/>
+                </label>
+
+                <input type="submit" value="ENVIAR">
+
+                </form>
+
+            </article> <!--formulario-->
+       </section>
+
+    </main>
+
+    <footer class="ponerBorde"> 
+
+    </footer>
+
+    
+</body>
+</html>

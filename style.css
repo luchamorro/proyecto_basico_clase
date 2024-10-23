@@ -1,0 +1,180 @@
+
+        /*  Reset de la pagina        */
+        * {padding: 0;
+            margin: 0;}
+ 
+            a {text-decoration: none;
+             color: black;}
+ 
+             ul {list-style: none;
+             margin-right: 0;}
+ 
+         /*  Codigo pagina en desktop      */
+
+
+ 
+         header,nav,main,footer {width: 80%;
+                                 margin: 0 auto;}
+
+        body{ padding-top: 7rem;}
+ 
+         header { 
+                 min-height: 16rem;
+                 background-color: pink;}
+ 
+         nav{   
+                 min-height: 4rem;
+                 background-color: orange;
+                 position: fixed;
+                 top: 0;
+                 left: 10%;
+
+                }
+ 
+         main {  
+                 min-height: 20rem;
+                 background-color: lightblue;
+                 display: flex;
+                 justify-content:space-around;
+                 flex-wrap: wrap;
+             
+             
+             }
+ 
+         footer {
+                 min-height: 7rem;
+                 background-color: chartreuse;}
+ 
+         .ponerBorde {border: 0.3rem solid black;}
+ 
+         main div {width: 30%;
+                 min-height: 5rem;
+                 background-color: lightgray;
+                 border: 0.2rem solid red;}
+ 
+         .izda {background-color: rgba(215, 221, 48, 0.533);}
+          .dcha {background-color: rgb(140, 215, 65);}
+ 
+ 
+             main div a {font-size: 1rem;
+                         color:rgb(81, 20, 138);
+                         font-weight: 600;
+                         font-family: Verdana, Geneva, Tahoma, sans-serif;
+                     }
+ 
+ 
+            nav ul {
+                 min-height: 7rem;
+                 display:flex;                   /*los children del ul son los li. ul es el elemento contenedor. por eso ponemos display flex aqui*/
+                 justify-content: space-around;
+                 align-items: center;
+             }
+ 
+           nav ul li { width: 8rem;
+                     height: 3.5rem;
+                   
+                   /*  border: 0.1rem solid green;*/
+                     margin: 0.5rem;
+ 
+                                  }
+ 
+ 
+             ul li a{
+                 font-size: 2rem;
+                 color: rgb(255, 255, 255);
+                 display: block;
+                 text-align:center;
+                 padding-top: 0.5rem;
+                 background-color: rgb(22, 22, 22);
+                 border-radius: 0.3rem;
+             }
+ 
+             ul li a:hover{
+                 color: rgb(0, 0, 0);
+                 background-color: rgb(255, 255, 255);
+                 transition: 300ms;
+ 
+             }
+
+             header {
+                display: flex;
+                
+             }
+
+
+
+             /*flexbox anidado*/
+header>div { border: 0.2rem solid red;}
+
+ header>div.logo{
+    width: 25%;
+}
+
+    header>div.titulo {
+        width: 75%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; /*como estoy en columnas usamos align items para alinear en el eje horizontal*/
+                justify-content: flex-start; /*alinea en el eje vertical*/
+
+                /*hay un eje principal y un eje secundario*   flex-direction: column;   flex-direction: row; */
+        
+    }
+ 
+
+
+             h1, h2,p {
+                    width: 50%;
+                    background-color: cadetblue;
+                    margin: 0.5rem;
+                    border: 0.3rem solid green;
+                    text-align: center;
+
+             }
+ 
+             section {
+                width: 100%;
+                background-color: chartreuse;
+                min-height: 20rem;
+                border: 0.1rem solid red;
+                display: flex;
+
+             }
+
+             article.mapa {
+                width: 40%;
+                border: 0.1rem solid red;
+
+             }
+
+             article.form { 
+                width: 60%;
+                 background-color: darkgray;
+                 min-height: 20rem;
+                 border: 0.1rem solid red;
+
+                
+                }
+
+     
+              /*  Codigo pagina en tablet      */
+
+              /*media query de responsive ---> crea una anidación de reglas css*/
+            @media screen and (max-width:900px) {
+               
+
+                main div {width: 45%;}
+                body{background-color: aqua;}
+                nav ul { display: flex;
+                        flex-direction: column;}
+                
+            } 
+             /*  Codigo pagina en selfphone      */
+
+            @media  screen and (max-width:602px) {
+                main div {width: 90%;}
+                body{background-color: rgb(7, 201, 23);}
+                
+            } 
+
+
